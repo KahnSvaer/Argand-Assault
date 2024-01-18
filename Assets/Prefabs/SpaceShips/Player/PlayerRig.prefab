@@ -30,10 +30,10 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2027282501777281856}
-  - {fileID: 7037078355959119406}
+  - {fileID: 7979789942626694341}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7107657493079721944
+--- !u!1 &4889215017349030991
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,38 +41,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7037078355959119406}
-  - component: {fileID: 8508639808622889998}
-  - component: {fileID: 7381406672654527916}
+  - component: {fileID: 7979789942626694341}
+  - component: {fileID: 2086122303581290659}
+  - component: {fileID: 3423550833985758705}
   m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
+  m_Name: Camera
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7037078355959119406
+--- !u!4 &7979789942626694341
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7107657493079721944}
+  m_GameObject: {fileID: 4889215017349030991}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.16800475, y: -0, z: -0, w: 0.9857862}
-  m_LocalPosition: {x: 0, y: 10.55, z: -19.04}
+  m_LocalRotation: {x: 0.13052616, y: 0, z: 0, w: 0.9914449}
+  m_LocalPosition: {x: 0, y: 5.3, z: -19.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5913932687119617536}
-  m_LocalEulerAnglesHint: {x: 19.344, y: 0, z: 0}
---- !u!20 &8508639808622889998
+  m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
+--- !u!20 &2086122303581290659
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7107657493079721944}
+  m_GameObject: {fileID: 4889215017349030991}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -102,7 +102,7 @@ Camera:
   field of view: 60
   orthographic: 0
   orthographic size: 5
-  m_Depth: -1
+  m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -117,13 +117,13 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &7381406672654527916
+--- !u!81 &3423550833985758705
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7107657493079721944}
+  m_GameObject: {fileID: 4889215017349030991}
   m_Enabled: 1
 --- !u!1001 &8797536049618916445
 PrefabInstance:
@@ -180,10 +180,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2114223523954939209, guid: 7690426896c0f0546bd6caeb346148f1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8131150945535185260}
   m_SourcePrefab: {fileID: 100100000, guid: 7690426896c0f0546bd6caeb346148f1, type: 3}
 --- !u!4 &2027282501777281856 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7364927854199850781, guid: 7690426896c0f0546bd6caeb346148f1, type: 3}
   m_PrefabInstance: {fileID: 8797536049618916445}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7439976799127290132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2114223523954939209, guid: 7690426896c0f0546bd6caeb346148f1, type: 3}
+  m_PrefabInstance: {fileID: 8797536049618916445}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8131150945535185260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7439976799127290132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98a10586ccfdf1f449ea624566ae2c17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ControlSpeed: 25
+  xRange: 10
+  yRange: 7.5
+  xRotFactor: -2
+  yRotFactor: 2
+  xInputfactor: -20
+  yInputfactor: -20

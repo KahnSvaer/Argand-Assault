@@ -14,6 +14,8 @@ public class OldInputController : MonoBehaviour
     [SerializeField] float yInputfactor;
 
 
+    [SerializeField] GameObject[] lasers;
+
     float xInput, yInput;
 
 
@@ -21,6 +23,22 @@ public class OldInputController : MonoBehaviour
     {
         ProcessTranslation();
         ProcessRotation();
+        ProcessFiring();
+    }
+
+    private void ProcessFiring()
+    {
+        bool fireInput = Input.GetButton("Fire1");
+        StartShooting(fireInput);
+    }
+
+    private void StartShooting(bool fireInput)
+    {
+        foreach (GameObject laser in lasers)
+        {
+            var val = laser.GetComponent<ParticleSystem>().emission;
+            val.enabled = fireInput;
+        }
     }
 
     private void ProcessTranslation()

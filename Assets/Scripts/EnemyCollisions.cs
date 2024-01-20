@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class EnemyCollisions : MonoBehaviour
 {   
-    [SerializeField] ParticleSystem EnemyCrashVFX;
+    [SerializeField] GameObject EnemyCrashFX;
     [SerializeField] int hitPoints;
 
     Transform parent;
@@ -45,7 +45,7 @@ public class EnemyCollisions : MonoBehaviour
 
     private void CrashSequence()
     {
-        Instantiate(EnemyCrashVFX, transform.position, Quaternion.identity, parent);
+        Instantiate(EnemyCrashFX, transform.position, Quaternion.identity, parent);
         Destroy(gameObject);
     }
 }

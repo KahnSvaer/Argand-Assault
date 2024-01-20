@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: 96edabcbe4eb1f24caf75468cb89f6d5
+guid: d2cf39ecd1cf63446bcffb6f2bb2767b
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - EnemyCrashFX: {fileID: 3200836327345539238, guid: ead9bf8ee8f0be14fba8f0c8a5716fcc, type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
